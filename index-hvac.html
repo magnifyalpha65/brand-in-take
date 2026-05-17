@@ -1,0 +1,375 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<!--
+================================================================
+EDIT ONLY LINES 20-30 FOR EACH NEW BUSINESS
+================================================================
+-->
+<script>
+const B_NAME    = "Rocky Mountain Climate Control";
+const B_TAGLINE = "Heating, Cooling & HVAC Services";
+const B_PHONE   = "(720) 555-0198";
+const B_EMAIL   = "info@rmclimate.com";
+const B_WA      = "17205550198";
+const B_IG      = "https://instagram.com";
+const B_FB      = "https://facebook.com";
+const B_GOOGLE  = "https://maps.google.com";
+const B_LI      = "https://linkedin.com";
+const FORMSPREE = "xwvzeaow";
+const CALCOM    = "https://cal.com/mani-magnifyalpha/clientintake";
+</script>
+<title id="pt">Loading...</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+<style>
+*,*::before,*::after{margin:0;padding:0;box-sizing:border-box}
+:root{
+  --aqua:#0891b2;--aqua2:#0e7490;--aqua3:#cffafe;--aqua4:#e0f7fa;
+  --orange:#f97316;--orange2:#fb923c;
+  --dark:#0c1a2e;--navy:#1e3a5f;
+  --white:#ffffff;--off:#f0f9ff;--gray:#64748b;--border:#bae6fd;
+}
+html{scroll-behavior:smooth}
+body{font-family:'Poppins',sans-serif;color:var(--dark);background:var(--white);overflow-x:hidden}
+
+/* TOP BAR */
+.topbar{background:var(--dark);padding:8px 5%;display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap;gap:8px}
+.tsoc{display:flex;align-items:center;gap:7px}
+.soc{width:28px;height:28px;border-radius:50%;display:flex;align-items:center;justify-content:center;text-decoration:none;transition:opacity .2s}
+.soc:hover{opacity:.75}
+.soc svg{width:13px;height:13px;fill:white}
+.soc-wa{background:#25d366}
+.soc-ig{background:linear-gradient(45deg,#f09433,#e6683c,#dc2743,#cc2366,#bc1888)}
+.soc-fb{background:#1877f2}
+.soc-go{background:white}.soc-go svg{fill:#4285f4}
+.soc-li{background:#0077b5}
+.tcon{display:flex;align-items:center;gap:16px;flex-wrap:wrap}
+.tci{display:flex;align-items:center;gap:5px;color:rgba(255,255,255,.65);font-size:.74rem;text-decoration:none;transition:color .2s;font-weight:300}
+.tci:hover{color:var(--orange2)}
+.tci svg{width:11px;height:11px;fill:var(--aqua);flex-shrink:0}
+
+/* NAV */
+nav{position:sticky;top:0;z-index:100;background:rgba(255,255,255,.97);backdrop-filter:blur(10px);border-bottom:2px solid var(--border);padding:0 5%;height:64px;display:flex;align-items:center;justify-content:space-between}
+.nlogo{font-family:'Poppins',sans-serif;font-size:1.05rem;font-weight:800;color:var(--dark);text-decoration:none;letter-spacing:-.02em}
+.nlogo span{color:var(--aqua)}
+.nlinks{display:flex;align-items:center;gap:26px}
+.nlinks a{text-decoration:none;color:var(--gray);font-size:.82rem;font-weight:500;transition:color .2s}
+.nlinks a:hover{color:var(--aqua)}
+.ncta{background:var(--orange)!important;color:white!important;padding:9px 20px;border-radius:50px;font-weight:600!important;font-size:.79rem!important;transition:all .2s!important;box-shadow:0 4px 14px rgba(249,115,22,.3)}
+.ncta:hover{background:var(--orange2)!important;transform:translateY(-1px)}
+@media(max-width:640px){.nhide{display:none!important}}
+
+/* HERO */
+.hero{position:relative;min-height:88vh;display:flex;align-items:center;padding:80px 5% 60px;overflow:hidden}
+.hbg{position:absolute;inset:0;z-index:0;background:linear-gradient(135deg,#0a1628 0%,#0c2a4a 40%,#0e4a6e 70%,#0891b2 100%)}
+.hov{position:absolute;inset:0;z-index:1;background:linear-gradient(115deg,rgba(10,22,40,.7) 0%,rgba(8,145,178,.1) 60%,rgba(10,22,40,.5) 100%)}
+.hcon{position:relative;z-index:2;max-width:620px;animation:fu .8s ease both}
+@keyframes fu{from{opacity:0;transform:translateY(24px)}to{opacity:1;transform:translateY(0)}}
+.htag{display:inline-flex;align-items:center;gap:7px;background:rgba(8,145,178,.2);border:1px solid rgba(8,145,178,.5);color:#67e8f9;padding:5px 14px;border-radius:50px;font-size:.69rem;font-weight:600;letter-spacing:.1em;text-transform:uppercase;margin-bottom:20px}
+.htag::before{content:'';width:5px;height:5px;background:var(--aqua);border-radius:50%;animation:bl 1.8s infinite}
+@keyframes bl{0%,100%{opacity:1}50%{opacity:.3}}
+.hero h1{font-size:clamp(2rem,5vw,3.6rem);font-weight:800;color:white;line-height:1.1;letter-spacing:-.03em;margin-bottom:16px}
+.hero h1 em{color:#67e8f9;font-style:normal;display:block}
+.hsub{font-size:.93rem;color:rgba(255,255,255,.58);line-height:1.78;margin-bottom:36px;font-weight:300;max-width:480px}
+.hbtns{display:flex;gap:12px;flex-wrap:wrap}
+.bpri{background:var(--orange);color:white;padding:13px 30px;border-radius:50px;text-decoration:none;font-weight:700;font-size:.84rem;letter-spacing:.03em;transition:all .2s;display:inline-flex;align-items:center;gap:7px;border:none;cursor:pointer;box-shadow:0 6px 20px rgba(249,115,22,.35)}
+.bpri:hover{background:var(--orange2);transform:translateY(-2px)}
+.bgho{background:transparent;color:white;padding:13px 30px;border-radius:50px;text-decoration:none;font-weight:600;font-size:.84rem;letter-spacing:.03em;border:1.5px solid rgba(255,255,255,.3);transition:all .2s;display:inline-flex;align-items:center;gap:7px}
+.bgho:hover{border-color:#67e8f9;color:#67e8f9}
+
+/* TRUST */
+.trust{background:var(--aqua);padding:13px 5%;display:flex;justify-content:center;align-items:center;gap:28px;flex-wrap:wrap}
+.ti{display:flex;align-items:center;gap:7px;color:white;font-size:.76rem;font-weight:600;letter-spacing:.04em;text-transform:uppercase}
+.ti svg{width:14px;height:14px;fill:rgba(255,255,255,.8)}
+
+/* SECTIONS */
+.sec{padding:68px 5%}
+.sec-alt{background:var(--off)}
+.slbl{font-size:.68rem;font-weight:700;letter-spacing:.14em;text-transform:uppercase;color:var(--aqua);margin-bottom:8px}
+.stit{font-size:clamp(1.6rem,3vw,2.2rem);font-weight:800;letter-spacing:-.02em;color:var(--dark);margin-bottom:10px;line-height:1.15}
+.ssub{font-size:.87rem;color:var(--gray);line-height:1.78;font-weight:300;max-width:480px;margin-bottom:42px}
+
+/* SERVICE CARDS */
+.sgrid{display:grid;grid-template-columns:repeat(auto-fit,minmax(230px,1fr));gap:20px}
+.sc{background:white;border:1px solid var(--border);border-radius:12px;overflow:hidden;transition:all .25s}
+.sc:hover{transform:translateY(-5px);box-shadow:0 16px 40px rgba(8,145,178,.15);border-color:var(--aqua)}
+.sci-wrap{width:100%;height:150px;background:var(--aqua4);display:flex;align-items:center;justify-content:center;font-size:3rem}
+.scb{padding:18px 16px}
+.sc h3{font-size:.9rem;font-weight:700;color:var(--dark);margin-bottom:5px}
+.sc p{font-size:.78rem;color:var(--gray);line-height:1.58;font-weight:300;margin-bottom:10px}
+.scp{display:inline-block;background:var(--aqua4);color:var(--aqua2);font-size:.75rem;font-weight:700;padding:3px 10px;border-radius:50px;letter-spacing:.03em}
+
+/* WHY */
+.wgrid{display:grid;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));gap:20px}
+.wc{background:white;border:1px solid var(--border);border-radius:12px;padding:26px 22px;position:relative;overflow:hidden;transition:all .2s}
+.wc:hover{border-color:var(--aqua);box-shadow:0 8px 24px rgba(8,145,178,.1)}
+.wc::before{content:'';position:absolute;top:-16px;right:-16px;width:64px;height:64px;background:var(--aqua4);border-radius:50%}
+.wn{font-size:2.4rem;font-weight:800;color:var(--border);line-height:1;margin-bottom:10px}
+.wc h3{font-size:.88rem;font-weight:700;color:var(--dark);margin-bottom:6px}
+.wc p{font-size:.78rem;color:var(--gray);line-height:1.58;font-weight:300}
+
+/* CONTACT */
+.cwrap{display:grid;grid-template-columns:1fr 1fr;gap:48px;align-items:start}
+@media(max-width:768px){.cwrap{grid-template-columns:1fr}}
+.cinfo p{font-size:.87rem;color:var(--gray);line-height:1.78;font-weight:300;margin-bottom:28px}
+.ciitem{display:flex;align-items:flex-start;gap:12px;margin-bottom:18px}
+.ciico{width:38px;height:38px;background:var(--aqua4);border-radius:8px;display:flex;align-items:center;justify-content:center;flex-shrink:0}
+.ciico svg{width:16px;height:16px;fill:var(--aqua)}
+.citxt h4{font-size:.82rem;font-weight:600;color:var(--dark);margin-bottom:2px}
+.citxt p{font-size:.78rem;color:var(--gray);font-weight:300}
+.fcard{background:white;border:1px solid var(--border);border-radius:14px;overflow:hidden;box-shadow:0 8px 32px rgba(8,145,178,.1)}
+.ftop{background:linear-gradient(135deg,var(--aqua2),var(--aqua));padding:20px 24px}
+.ftop h3{font-size:1rem;font-weight:700;color:white;margin-bottom:3px}
+.ftop p{font-size:.74rem;color:rgba(255,255,255,.6);font-weight:300}
+.finn{padding:24px}
+.fg{margin-bottom:12px}
+.fg label{display:block;font-size:.68rem;font-weight:700;letter-spacing:.07em;text-transform:uppercase;color:var(--dark);margin-bottom:5px}
+.fg input,.fg select,.fg textarea{width:100%;padding:10px 12px;border:1.5px solid var(--border);border-radius:8px;font-family:'Poppins',sans-serif;font-size:.84rem;color:var(--dark);background:var(--off);outline:none;transition:border-color .2s}
+.fg input:focus,.fg select:focus,.fg textarea:focus{border-color:var(--aqua);background:white}
+.fg textarea{resize:vertical;min-height:74px}
+.frow{display:grid;grid-template-columns:1fr 1fr;gap:10px}
+@media(max-width:460px){.frow{grid-template-columns:1fr}}
+.fsub{width:100%;background:var(--orange);color:white;padding:12px;border:none;border-radius:50px;font-family:'Poppins',sans-serif;font-size:.84rem;font-weight:700;cursor:pointer;transition:all .2s;margin-top:4px;box-shadow:0 4px 14px rgba(249,115,22,.3)}
+.fsub:hover{background:var(--orange2);transform:translateY(-1px)}
+.fnote{text-align:center;font-size:.68rem;color:var(--gray);margin-top:7px;font-weight:300}
+.fsuc{display:none;padding:30px 24px;text-align:center}
+.fsck{width:52px;height:52px;background:#dcfce7;border-radius:50%;display:flex;align-items:center;justify-content:center;font-size:1.4rem;margin:0 auto 12px}
+.fsuc h3{font-size:1rem;font-weight:700;color:var(--dark);margin-bottom:6px}
+.fsuc p{font-size:.8rem;color:var(--gray);line-height:1.58;margin-bottom:14px;font-weight:300}
+.fshl{background:var(--off);border:1.5px solid var(--border);border-left:3px solid var(--aqua);border-radius:8px;padding:10px 14px;font-size:.78rem;color:var(--dark);font-weight:500;text-align:left;line-height:1.58;margin-bottom:14px}
+
+/* BOOK */
+.bsec{background:linear-gradient(135deg,var(--aqua2),var(--dark));padding:56px 5%;text-align:center}
+.bsec h2{font-size:clamp(1.5rem,3vw,2rem);font-weight:800;color:white;letter-spacing:-.02em;margin-bottom:10px}
+.bsec p{color:rgba(255,255,255,.5);font-size:.87rem;font-weight:300;margin-bottom:28px;max-width:420px;margin-left:auto;margin-right:auto;line-height:1.7}
+.bwhi{background:white;color:var(--aqua2);padding:12px 34px;border-radius:50px;text-decoration:none;font-weight:700;font-size:.84rem;transition:all .2s;display:inline-flex;align-items:center;gap:7px;box-shadow:0 6px 20px rgba(0,0,0,.15)}
+.bwhi:hover{background:var(--aqua3);transform:translateY(-2px)}
+
+/* FOOTER */
+footer{background:var(--dark);padding:18px 5%;display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap;gap:10px}
+.fleft{color:rgba(255,255,255,.28);font-size:.72rem;font-weight:300}
+.fright{font-size:.82rem;font-weight:700;color:white}
+.fright span{color:var(--orange)}
+
+
+
+.waf{position:fixed;bottom:24px;right:24px;width:52px;height:52px;background:#25d366;border-radius:50%;display:flex;align-items:center;justify-content:center;text-decoration:none;box-shadow:0 4px 16px rgba(37,211,102,.45);z-index:999;transition:transform .2s}
+.waf:hover{transform:scale(1.1)}
+.waf svg{width:26px;height:26px;fill:white}
+@media(max-width:580px){
+  .topbar,.hbtns{flex-direction:column;align-items:flex-start}
+  .trust{gap:12px;justify-content:flex-start}
+  footer{flex-direction:column}
+}
+</style>
+</head>
+<body>
+
+<!-- TOP BAR -->
+<div class="topbar">
+  <div class="tsoc">
+    <a class="soc soc-wa" id="wa1" href="#" target="_blank" title="WhatsApp"><svg viewBox="0 0 24 24"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg></a>
+    <a class="soc soc-ig" id="ig1" href="#" target="_blank" title="Instagram"><svg viewBox="0 0 24 24"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zM12 0C8.741 0 8.333.014 7.053.072 2.695.272.273 2.69.073 7.052.014 8.333 0 8.741 0 12c0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98C8.333 23.986 8.741 24 12 24c3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98C15.668.014 15.259 0 12 0zm0 5.838a6.162 6.162 0 100 12.324 6.162 6.162 0 000-12.324zM12 16a4 4 0 110-8 4 4 0 010 8zm6.406-11.845a1.44 1.44 0 100 2.881 1.44 1.44 0 000-2.881z"/></svg></a>
+    <a class="soc soc-fb" id="fb1" href="#" target="_blank" title="Facebook"><svg viewBox="0 0 24 24"><path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"/></svg></a>
+    <a class="soc soc-go" id="go1" href="#" target="_blank" title="Google"><svg viewBox="0 0 24 24"><path d="M12.48 10.92v3.28h7.84c-.24 1.84-.853 3.187-1.787 4.133-1.147 1.147-2.933 2.4-6.053 2.4-4.827 0-8.6-3.893-8.6-8.72s3.773-8.72 8.6-8.72c2.6 0 4.507 1.027 5.907 2.347l2.307-2.307C18.747 1.44 16.133 0 12.48 0 5.867 0 .307 5.387.307 12s5.56 12 12.173 12c3.573 0 6.267-1.173 8.373-3.36 2.16-2.16 2.84-5.213 2.84-7.667 0-.76-.053-1.467-.173-2.053H12.48z"/></svg></a>
+    <a class="soc soc-li" id="li1" href="#" target="_blank" title="LinkedIn"><svg viewBox="0 0 24 24"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a2.062 2.062 0 01-2.063-2.065 2.064 2.064 0 112.063 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg></a>
+  </div>
+  <div class="tcon">
+    <a class="tci" id="tp" href="#"><svg viewBox="0 0 24 24"><path d="M6.6 10.8c1.4 2.8 3.8 5.1 6.6 6.6l2.2-2.2c.3-.3.7-.4 1-.2 1.1.4 2.3.6 3.6.6.6 0 1 .4 1 1V20c0 .6-.4 1-1 1-9.4 0-17-7.6-17-17 0-.6.4-1 1-1h3.5c.6 0 1 .4 1 1 0 1.3.2 2.5.6 3.6.1.3 0 .7-.2 1L6.6 10.8z"/></svg><span id="tpt">...</span></a>
+    <a class="tci" id="te" href="#"><svg viewBox="0 0 24 24"><path d="M20 4H4c-1.1 0-2 .9-2 2v12c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z"/></svg><span id="tet">...</span></a>
+  </div>
+</div>
+
+<!-- NAV -->
+<nav>
+  <a class="nlogo" href="#" id="nl">Rocky<span>HVAC</span></a>
+  <div class="nlinks">
+    <a href="#services" class="nhide">Services</a>
+    <a href="#about" class="nhide">About</a>
+    <a href="#contact">Contact Us</a>
+    <a href="#contact" class="ncta">Get Free Quote</a>
+  </div>
+</nav>
+
+<!-- HERO -->
+<section class="hero">
+  <div class="hbg"></div>
+  <div class="hov"></div>
+  <div class="hcon">
+    <div class="htag">Certified · Licensed · 24/7 Available</div>
+    <h1 id="hh1">Loading...<em id="hem">HVAC &amp; Heating Services</em></h1>
+    <p class="hsub">Reliable heating, cooling and ventilation solutions. Transparent pricing, certified technicians and guaranteed workmanship on every job.</p>
+    <div class="hbtns">
+      <a href="#contact" class="bpri">Get Free Quote →</a>
+      <a href="#" id="hcal2" class="bgho">Book a Call →</a>
+    </div>
+  </div>
+</section>
+
+<!-- TRUST -->
+<div class="trust">
+  <div class="ti"><svg viewBox="0 0 24 24"><path d="M12 1L3 5v6c0 5.55 3.84 10.74 9 12 5.16-1.26 9-6.45 9-12V5l-9-4z"/></svg>Licensed &amp; Insured</div>
+  <div class="ti"><svg viewBox="0 0 24 24"><path d="M11.99 2C6.47 2 2 6.48 2 12s4.47 10 9.99 10C17.52 22 22 17.52 22 12S17.52 2 11.99 2zm4.24 16L12 15.45 7.77 18l1.12-4.81-3.73-3.23 4.92-.42L12 5l1.92 4.53 4.92.42-3.73 3.23L16.23 18z"/></svg>5-Star Rated</div>
+  <div class="ti"><svg viewBox="0 0 24 24"><path d="M11.5 2C6.81 2 3 5.81 3 10.5S6.81 19 11.5 19h.5v3c4.86-2.34 8-7 8-11.5C20 5.81 16.19 2 11.5 2zm1 14.5h-2v-2h2v2zm0-4h-2c0-3.25 3-3 3-5 0-1.1-.9-2-2-2s-2 .9-2 2h-2c0-2.21 1.79-4 4-4s4 1.79 4 4c0 2.5-3 2.75-3 5z"/></svg>24/7 Emergency</div>
+  <div class="ti"><svg viewBox="0 0 24 24"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-2 15l-5-5 1.41-1.41L10 14.17l7.59-7.59L19 8l-9 9z"/></svg>Same Day Service</div>
+</div>
+
+<!-- SERVICES -->
+<section class="sec" id="services">
+  <div class="slbl">What We Offer</div>
+  <h2 class="stit">Services We Offer</h2>
+  <p class="ssub">Complete HVAC solutions with no hidden charges.</p>
+  <div class="sgrid">
+    <div class="sc">
+      <div class="sci-wrap">❄️</div>
+      <div class="scb"><h3>AC Repair &amp; Service</h3><p>Diagnosis and repair of all AC makes and models. Most repairs completed same day.</p><div class="scp">From $150 – $600</div></div>
+    </div>
+    <div class="sc">
+      <div class="sci-wrap">🔥</div>
+      <div class="scb"><h3>Heating &amp; Furnace Repair</h3><p>Gas and electric furnace repairs, heat pump service, and boiler maintenance.</p><div class="scp">From $125 – $480</div></div>
+    </div>
+    <div class="sc">
+      <div class="sci-wrap">🚨</div>
+      <div class="scb"><h3>Emergency HVAC Service</h3><p>24/7 response for urgent heating and cooling failures. Fast arrival guaranteed.</p><div class="scp">From $140/hr after hours</div></div>
+    </div>
+    <div class="sc">
+      <div class="sci-wrap">🔧</div>
+      <div class="scb"><h3>Maintenance &amp; Tune-Up</h3><p>Annual service plans to keep your system efficient and prevent costly breakdowns.</p><div class="scp">From $85 – $170/year</div></div>
+    </div>
+  </div>
+</section>
+
+<!-- WHY US -->
+<section class="sec sec-alt" id="about">
+  <div class="slbl">Trust What We Offer</div>
+  <h2 class="stit">Why Choose Us</h2>
+  <p class="ssub">Certified technicians, upfront pricing and guaranteed results on every job.</p>
+  <div class="wgrid">
+    <div class="wc"><div class="wn">01</div><h3>Certified Technicians</h3><p>Every technician is fully certified, background checked and continuously trained on new systems.</p></div>
+    <div class="wc"><div class="wn">02</div><h3>No Hidden Charges</h3><p>Clear written quote before any work begins. What we quote is what you pay — no surprises.</p></div>
+    <div class="wc"><div class="wn">03</div><h3>Same Day Response</h3><p>Most service calls attended same day. Emergency calls within 2 hours. We understand urgency.</p></div>
+    <div class="wc"><div class="wn">04</div><h3>Workmanship Guarantee</h3><p>Every job is guaranteed. If something is not right we come back and fix it. No questions asked.</p></div>
+  </div>
+</section>
+
+<!-- CONTACT -->
+<section class="sec" id="contact">
+  <div class="cwrap">
+    <div class="cinfo">
+      <div class="slbl">Contact Us</div>
+      <h2 class="stit">Get In Touch</h2>
+      <p>Book a call with us and we will help you in detail. Fill in the form below and we will be in touch shortly.</p>
+      <div class="ciitem"><div class="ciico"><svg viewBox="0 0 24 24"><path d="M6.6 10.8c1.4 2.8 3.8 5.1 6.6 6.6l2.2-2.2c.3-.3.7-.4 1-.2 1.1.4 2.3.6 3.6.6.6 0 1 .4 1 1V20c0 .6-.4 1-1 1-9.4 0-17-7.6-17-17 0-.6.4-1 1-1h3.5c.6 0 1 .4 1 1 0 1.3.2 2.5.6 3.6.1.3 0 .7-.2 1L6.6 10.8z"/></svg></div><div class="citxt"><h4>Phone</h4><p id="cip">...</p></div></div>
+      <div class="ciitem"><div class="ciico"><svg viewBox="0 0 24 24"><path d="M20 4H4c-1.1 0-2 .9-2 2v12c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z"/></svg></div><div class="citxt"><h4>Email</h4><p id="cie">...</p></div></div>
+      <div class="ciitem"><div class="ciico"><svg viewBox="0 0 24 24"><path d="M11.99 2C6.47 2 2 6.48 2 12s4.47 10 9.99 10C17.52 22 22 17.52 22 12S17.52 2 11.99 2zm4.24 16L12 15.45 7.77 18l1.12-4.81-3.73-3.23 4.92-.42L12 5l1.92 4.53 4.92.42-3.73 3.23L16.23 18z"/></svg></div><div class="citxt"><h4>Response Time</h4><p>Within 2 hours · Emergency same day</p></div></div>
+    </div>
+    <div>
+      <div class="fcard">
+        <div class="ftop"><h3>Get Free Quote</h3><p>We will get back to you shortly</p></div>
+        <div id="fbody">
+          <div class="finn">
+            <form id="cform">
+              <div class="frow">
+                <div class="fg"><label>First Name</label><input type="text" name="first_name" placeholder="John" required></div>
+                <div class="fg"><label>Last Name</label><input type="text" name="last_name" placeholder="Smith"></div>
+              </div>
+              <div class="fg"><label>Email Address</label><input type="email" name="email" placeholder="john@example.com" required></div>
+              <div class="fg"><label>Phone Number</label><input type="tel" name="phone" placeholder="(000) 000-0000"></div>
+              <div class="fg">
+                <label>Service Needed</label>
+                <select name="service" required>
+                  <option value="">Select your service...</option>
+                  <option>AC Repair &amp; Service</option>
+                  <option>Heating &amp; Furnace Repair</option>
+                  <option>Emergency HVAC Service</option>
+                  <option>Maintenance &amp; Tune-Up</option>
+                  <option>New System Installation</option>
+                  <option>Ductwork &amp; Ventilation</option>
+                  <option>Other</option>
+                </select>
+              </div>
+              <div class="fg"><label>Describe Your Issue</label><textarea name="message" placeholder="List down your concern..."></textarea></div>
+              <button type="submit" class="fsub">Send My Request →</button>
+              <p class="fnote">⚡ Instant confirmation sent to your email automatically</p>
+            </form>
+          </div>
+        </div>
+        <div class="fsuc" id="fsuc">
+          <div class="fsck">✓</div>
+          <h3>Request Received!</h3>
+          <p>Check your email inbox right now. An automated confirmation has just been sent to you.</p>
+          <div class="fshl" id="fshl">Loading...</div>
+          <p style="font-size:.76rem;color:var(--gray);margin-bottom:14px;font-weight:300">Want to speak sooner? Book a call directly below.</p>
+          <a id="scal" href="#" class="bpri">Book a Call →</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- BOOK -->
+<section class="bsec">
+  <h2>Book a Free Call</h2>
+  <p>Book a free  call. Get expert advice on your heating and cooling needs with absolutely no obligation.</p>
+  <a id="bcal" href="#" class="bwhi">Book a Free Call →</a>
+</section>
+
+<!-- FOOTER -->
+<footer>
+  <div class="fleft">© <span id="yr"></span> All Rights Reserved</div>
+  <div class="fright">Designed by <span>Magnify Alpha</span></div>
+</footer>
+
+
+
+<script>
+document.addEventListener('DOMContentLoaded',function(){
+  document.title=B_NAME+" | "+B_TAGLINE;
+  document.getElementById('pt').textContent=B_NAME+" | "+B_TAGLINE;
+  document.getElementById('wa1').href="https://wa.me/"+B_WA;
+  document.getElementById('ig1').href=B_IG;
+  document.getElementById('fb1').href=B_FB;
+  document.getElementById('go1').href=B_GOOGLE;
+  document.getElementById('li1').href=B_LI;
+  
+  document.getElementById('tp').href="tel:"+B_PHONE.replace(/\D/g,'');
+  document.getElementById('tpt').textContent=B_PHONE;
+  document.getElementById('te').href="mailto:"+B_EMAIL;
+  document.getElementById('tet').textContent=B_EMAIL;
+  const w=B_NAME.split(' ');
+  document.getElementById('nl').innerHTML=w[0]+'<span>'+(w[1]||'.')+'</span>';
+  document.getElementById('hh1').childNodes[0].textContent=B_NAME+" — ";
+  document.getElementById('hem').textContent=B_TAGLINE;
+  document.getElementById('hcal2').href=CALCOM;
+  document.getElementById('cip').textContent=B_PHONE;
+  document.getElementById('cie').textContent=B_EMAIL;
+  document.getElementById('fshl').innerHTML="✓ Your enquiry has been received.<br>We will be in touch with you shortly.<br>Thank you for reaching out.";
+  document.getElementById('scal').href=CALCOM;
+  document.getElementById('bcal').href=CALCOM;
+  document.getElementById('yr').textContent=new Date().getFullYear();
+  // WhatsApp float — same number as top bar — auto message
+  const waMsg = encodeURIComponent("Thank you so much for reaching out. We appreciate your time and value it. We will get back to you shortly.");
+  document.getElementById('waf').href = "https://wa.me/" + B_WA + "?text=" + waMsg;
+});
+document.getElementById('cform').addEventListener('submit',async function(e){
+  e.preventDefault();
+  const btn=document.querySelector('.fsub');
+  btn.textContent='Sending...';btn.disabled=true;
+  const fd=new FormData(this);fd.append('business',B_NAME);
+  try{
+    const r=await fetch('https://formspree.io/f/'+FORMSPREE,{method:'POST',body:fd,headers:{'Accept':'application/json'}});
+    if(r.ok){document.getElementById('fbody').style.display='none';document.getElementById('fsuc').style.display='block';}
+    else{btn.textContent='Send My Request →';btn.disabled=false;alert('Something went wrong.');}
+  }catch(e){btn.textContent='Send My Request →';btn.disabled=false;alert('Something went wrong.');}
+});
+</script>
+
+<!-- WHATSAPP FLOAT -->
+<a class="waf" id="waf" href="#" target="_blank" title="Chat on WhatsApp">
+  <svg viewBox="0 0 24 24"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+</a>
+</body>
+</html>
